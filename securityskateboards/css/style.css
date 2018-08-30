@@ -7,8 +7,13 @@ header{
 }
 /* ^^LOGO^^ */
 
-nav {
-  width: 100%;
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: nowrap;
+    width: 100%;
   list-style-type: none;
   text-align: center;
   margin: 0;
@@ -17,8 +22,6 @@ nav {
 }
 
 li {
-	display: inline;
-    list-style-type: none;
     font-family: 'Permanent Marker', cursive;
     font-size: 40px;
     padding: 20px;
@@ -37,3 +40,22 @@ img{
 	max-width: 1200px;
     margin: auto;
 }
+.container2{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+/* Media */
+@media (max-width:576px){
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+
+}
+/* Media */
